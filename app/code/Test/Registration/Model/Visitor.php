@@ -22,7 +22,7 @@ class Visitor extends \Magento\Customer\Model\Visitor
 	 * @return  \Magento\Customer\Model\Visitor
 	 */
 	public function initByRequest($observer)
-	{ return '';
+	{
 		if ($this->skipRequestLogging || $this->isModuleIgnored($observer)) {
 			return $this;
 		}
