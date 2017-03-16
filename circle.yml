@@ -5,6 +5,10 @@ machine:
 
   php:
     version: 7.0.4
+    
+dependencies:
+  pre:
+    - echo "memory_limit = 2048M" > /opt/circleci/php/$(phpenv global)/etc/conf.d/memory.ini
 
 test:
   override:
