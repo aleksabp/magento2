@@ -4,7 +4,7 @@ machine:
     America/Los_Angeles
 
   php:
-    version: 5.6.29
+    version: 7.0.4
 
 test:
   override:
