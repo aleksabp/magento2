@@ -1,3 +1,11 @@
+machine:
+
+  timezone:
+    America/Los_Angeles
+
+  php:
+    version: 5.6.29
+
 test:
   override:
-    - phpunit -c ./dev/tests/unit/phpunit.xml.dist ./app/code/
+    - ./vendor/bin/phpunit -c ./dev/tests/unit/phpunit.xml.dist ./app/code/
