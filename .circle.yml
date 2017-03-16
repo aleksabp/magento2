@@ -1,3 +1,0 @@
-test:
-  override:
-    - php bin/magento dev:tests:run unit
